@@ -14,18 +14,13 @@ app.use(bodyParser.json());
 
 app.use("/identify", identifyRouter);
 
-
 app.get('/', (req, res) => {
   res.send('Hello, world!');
 });
 
-// sequelize.sync().then(() => {
-//   app.listen(port, () => {
-//     console.log(`Server is running at http://localhost:${port}`);
-//   });
-// });
+
 
 app.listen(port,async()=>{
   await sequelize.authenticate();
-  console.log(`Your Port is Running on http://localhost:${port}`)
+  console.log(`Server is Running on http://localhost:${port}`)
 });

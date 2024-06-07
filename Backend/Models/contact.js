@@ -41,5 +41,3 @@ module.exports = Contact;
 //   "email": "mcfly@hillvalley.edu",
 //   "phoneNumber": "123456"
 // }
-
-
