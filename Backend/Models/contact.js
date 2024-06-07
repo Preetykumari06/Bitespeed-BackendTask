@@ -36,7 +36,7 @@ module.exports = Contact;
 
 
 
-1. // http://localhost:3030/identity/identify
+1. // http://localhost:3030/identify/identify
 // {
 //   "email": "mcfly@hillvalley.edu",
 //   "phoneNumber": "123456"
