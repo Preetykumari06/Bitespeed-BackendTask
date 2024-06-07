@@ -85,13 +85,14 @@ if (email || phoneNumber) {
   };
 
     return res.status(200).json({
-      contact: {
-        primaryContactId: primaryContact.id,
-        emails: [primaryContact.email],
-        phoneNumbers: [primaryContact.phoneNumber],
-        secondaryContactIds: secondaryContacts.map(contact => contact.id)
-      }
-    });
+        contact: {
+          primaryContactId: primaryContact.id,
+          emails: contacts.map(contact => contact.email),
+          phoneNumbers: contacts.map(contact => contact.phoneNumber),
+          secondaryContactIds: secondaryContacts.map(contact => contact.id)
+        }
+      });
+      
   
     } catch (error) {
        res.status(500).json({ error: 'Error identifying contact', details: error.message });
