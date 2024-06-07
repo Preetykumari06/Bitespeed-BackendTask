@@ -6,7 +6,7 @@ const cors = require('cors');
 const identifyRouter = require('./Backend/Routes/identify');
 const Contact = require('./Backend/Models/contact');
 
-const PORT=process.env.port;
+const port = process.env.PORT || 3030;
 
 const app = express();
 app.use(cors());
@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 });
 
 sequelize.sync().then(() => {
-  app.listen(PORT, () => {
-    console.log(`Server is running at http://localhost:${PORT}`);
+  app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
   });
 });
