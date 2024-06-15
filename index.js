@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use("/identify", identifyRouter);
 
 app.get('/', (req, res) => {
-  res.send('Hello, world!');
+  res.send('Hello, Welcome!');
 });
 
 
