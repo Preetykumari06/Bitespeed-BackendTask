@@ -11,6 +11,7 @@ Endpoint
 Endpoint For Retrieves All Data
 
 * Localhost URL: http://localhost:27282/identify/contacts
+* URL : https://bitespeed-backendtask.onrender.com/identify/contacts
 
 Getting Started:
 To get started with this project, follow these steps:
